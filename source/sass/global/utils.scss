@@ -10,3 +10,21 @@
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    max-width: 1160px;
+    width: 95%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 88.28%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 90.62%;
+  }
+}

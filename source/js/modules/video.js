@@ -1,0 +1,9 @@
+const video = document.querySelector('.about__video-container');
+
+video.addEventListener('click', () => {
+  if (video.classList.contains('playing')) {
+    return
+  }
+  video.classList.add('playing');
+  video.insertAdjacentHTML('afterbegin', '<iframe src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+});
