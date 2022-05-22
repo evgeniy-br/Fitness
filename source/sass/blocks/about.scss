@@ -132,7 +132,7 @@
   top: 408px;
   left: 437px;
   width: 364px;
-  height: 228px;
+  min-height: 228px;
 
   @media (max-width: $tablet-width) {
     width: 39.233%;
