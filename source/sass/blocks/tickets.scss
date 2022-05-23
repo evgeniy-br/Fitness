@@ -1,15 +1,19 @@
 .tickets {
-  background: $color-ghost-white url("../img/background/weights-desktop.png") no-repeat right 110%;
-  padding: 120px 0;
+  background:
+    url("../img/background/weights-desktop.png") no-repeat right 110%,
+    linear-gradient($color-ghost-white 87.64%, $color-default-white 87.64%);
+  padding: 120px 0 240px 0;
 
   @media (max-width: $tablet-width) {
-    padding: 100px 0;
-    background-image: url("../img/background/weights-tablet.png");
+    padding: 100px 0 200px 0;
+    background:
+      url("../img/background/weights-tablet.png") no-repeat right 100%,
+      linear-gradient($color-ghost-white 94.678%, $color-default-white 94.678%);
   }
 
   @media (max-width: $mobile-width) {
-    padding: 70px 0;
-    background: $color-ghost-white;
+    padding: 70px 0 140px 0;
+    background: linear-gradient($color-ghost-white 95.5%, $color-default-white 95.5%);
   }
 }
 
