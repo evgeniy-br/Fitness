@@ -1,9 +1,15 @@
 .promo {
   display: flex;
   color: $color-default-white;
+  margin-bottom: 120px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+    margin-bottom: 70px;
   }
 
   &::after {

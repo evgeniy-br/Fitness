@@ -5,6 +5,7 @@
 
 $color-default-black:               #102654;
 $color-default-white:               #ffffff;
+$color-default-black-opacity:       rgba(16, 38, 84, 0.89);
 
 // Project palette
 
@@ -18,6 +19,8 @@ $color-whisper:                     #e8e8e8;
 $color-crete-opacity:               rgba(120, 120, 120, 0.2);
 $color-crimson-opacity:             rgba(209, 10, 66, 0.2);
 $color-crimson:                     #d10a42;
+$color-dark-gray:                   #afafaf;
+$color-spindle:                     #b6bdcc;
 
 // Gradient
 
@@ -29,8 +32,8 @@ $header-gradient-mobile:            conic-gradient(from 171.43deg at 35.31% 34.2
 // Display width
 
 $desktop-max: 1365px;
-$desktop-min: 1024px;
-$tablet-width: 1023.9px;
+$desktop-min: 1200px;
+$tablet-width: 1199.9px;
 $mobile-width: 767px;
 
 // Other

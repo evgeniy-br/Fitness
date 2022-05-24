@@ -1,0 +1,174 @@
+.coaches {
+  margin-bottom: 120px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.coaches h2 {
+  margin: 0;
+  font-family: $font-bebas-neue;
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-bottom: 62px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.coaches__wrapper {
+  position: relative;
+
+  @media (min-width: $desktop-min) and (max-width: $desktop-max) {
+    width: 93%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 46px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 32px;
+  }
+}
+
+.coaches__slide {
+  position: relative;
+  text-align: center;
+}
+
+.coaches__slide img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.coaches__slide h3 {
+  position: absolute;
+  bottom: 20px;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: $color-default-white;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.coaches__slide:hover h3 {
+  display: none;
+}
+
+.coaches__info {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $color-default-black-opacity;
+  color: $color-default-white;
+  text-align: center;
+  padding: 50px;
+  overflow-y: auto;
+
+  @media (max-width: $mobile-width) {
+    padding: 28px 33px;
+  }
+}
+
+.coaches__slide:hover .coaches__info {
+  display: block;
+}
+
+.coaches__info h4 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.coaches__info p {
+  margin: 0;
+  color: $color-spindle;
+  margin-bottom: 45px;
+  line-height: 24px;
+}
+
+.coaches__list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.coaches__list-item {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 21px;
+
+  &::before {
+    content: ".";
+    position: absolute;
+    font-size: 50px;
+    line-height: 0;
+    left: 0;
+    top: -4px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.coaches__button-prev::after,
+.coaches__button-next::after {
+  content: '';
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/sprite/arrow-slider.svg");
+  background-size: cover;
+
+  @media (max-width: $mobile-width) {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.coaches__button-next::after {
+  transform: rotate(180deg);
+}
+
+.coaches__button-prev {
+  left: -45px;
+
+  @media (max-width: $tablet-width) {
+    left: 0;
+  }
+}
+
+.coaches__button-next {
+  right: -45px;
+
+  @media (max-width: $tablet-width) {
+    right: 0;
+  }
+}
