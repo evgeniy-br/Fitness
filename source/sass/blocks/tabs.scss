@@ -140,7 +140,7 @@
   }
 
   &:hover {
-    border-image: $button-buy-gradient 1;
+    border-image: $border-hover-gradient 1;
   }
 
   &::before {

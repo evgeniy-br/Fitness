@@ -276,8 +276,8 @@
               </div>
             </div>
           </div>
-          <div class="coaches__button-prev swiper-button-prev"></div>
-          <div class="coaches__button-next swiper-button-next"></div>
+          <div class="button-slider button-slider--prev coaches__button-prev swiper-button-prev"></div>
+          <div class="button-slider button-slider--next coaches__button-next swiper-button-next"></div>
         </div>
       </section>
       <section class="advantages">
@@ -315,8 +315,121 @@
           </li>
         </ul>
       </section>
-      <section>
-
+      <section class="promo wrapper">
+        <h2>Акции</h2>
+        <ul class="promo__list">
+          <li class="promo__list-item promo__list-item--unlimited">
+            <div class="promo__list-item-container">
+              <h3>Год<br><span class="promo__big-text">4999</span></h3>
+              <p>Безлимитный абонемент в тренажерный зал</p>
+              <a class="promo__button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="promo__list-item">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <a class="promo__button" href="#">Подробнее</a>
+          </li>
+          <li class="promo__list-item">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес  с командой</p>
+            <a class="promo__button" href="#">Подробнее</a>
+          </li>
+        </ul>
+      </section>
+      <section class="comments">
+        <h2>Отзывы</h2>
+        <div class="comments__wrapper">
+          <div class="comments__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="comments__slide swiper-slide">
+                <blockquote class="comments__item">
+                  <div class="comments__img-container">
+                    <img src="img/content/feedback-avatar-desktop.png" width="80" height="80" alt="Фотография темноволосой девушки">
+                  </div>
+                  <div class="comments__author-contain">
+                    <cite class="comments__author-name">Анна Орлова</cite>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote class="comments__item">
+                  <div class="comments__img-container">
+                    <img src="img/content/feedback-avatar-desktop.png" width="80" height="80" alt="Фотография темноволосой девушки">
+                  </div>
+                  <div class="comments__author-contain">
+                    <cite class="comments__author-name">Князева Марьям</cite>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote class="comments__item">
+                  <div class="comments__img-container">
+                    <img src="img/content/feedback-avatar-desktop.png" width="80" height="80" alt="Фотография темноволосой девушки">
+                  </div>
+                  <div class="comments__author-contain">
+                    <cite class="comments__author-name">Кузина Дарья</cite>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="button-slider button-slider--prev comments__button-prev swiper-button-prev"></div>
+          <div class="button-slider button-slider--next comments__button-next swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="connection">
+        <div class="connection__wrapper wrapper">
+          <h2 class="visually-hidden">Связь с нами</h2>
+          <div class="connection__form-wrapper">
+            <h3>Бесплатное занятие</h3>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <ul class="connection__form-input-list">
+                <li class="connection__form-input-item">
+                  <label class="visually-hidden" for="name">Ваше имя</label>
+                  <input type="text" id="name" name="name" placeholder="Имя" required>
+                </li>
+                <li class="connection__form-input-item">
+                  <label class="visually-hidden" for="tel">Ваш номер телефона</label>
+                  <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern="^[0-9]+$" title="Используйте числовой формат" required>
+                </li>
+              </ul>
+              <button class="connection__form-button" type="submit">Отправить</button>
+            </form>
+          </div>
+          <div class="connection__contacts">
+            <h3>Контакты</h3>
+            <div class="connection__contacts-wrapper">
+              <div class="connection__location">
+                <ul class="connection__location-list">
+                  <li class="connection__location-item">
+                    <h4>Адрес:</h4>
+                    <address class="connection__location-address">г. Омск, ул. 60 лет Октября, 7</address>
+                  </li>
+                  <li class="connection__location-item">
+                    <h4>График работы:</h4>
+                    <p>Пн-Вс: с 8:00 до 22:00</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="connection__remote">
+                <ul class="connection__remote-list">
+                  <li class="connection__remote-item">
+                    <h4>Телефон:</h4>
+                    <a class="connection__remote-phone" href="tel:88005555555">8-800-555-55-55</a>
+                  </li>
+                  <li class="connection__remote-item">
+                    <h4>Email:</h4>
+                    <a class="connection__remote-email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script src="js/vendor.min.js"></script>

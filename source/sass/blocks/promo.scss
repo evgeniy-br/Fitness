@@ -1,6 +1,4 @@
-.event {
-  display: flex;
-  color: $color-default-white;
+.promo {
   margin-bottom: 120px;
 
   @media (max-width: $tablet-width) {
@@ -8,163 +6,171 @@
   }
 
   @media (max-width: $mobile-width) {
-    flex-direction: column;
     margin-bottom: 70px;
   }
+}
 
-  &::after {
-    content: "";
-    width: 56.9%;
-    background: $color-resolution-blue url("../img/background/supergames-background-desktop.png") no-repeat center;
-    background-size: cover;
+.promo h2 {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: $font-bebas-neue;
+  font-size: 49px;
+  line-height: 49px;
+  margin-bottom: 60px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.promo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.promo__list-item {
+  color: $color-resolution-blue;
+  border: 7px solid transparent;
+  border-image: $border-gradient 1;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  min-height: 211px;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
+
+  &--unlimited {
+    grid-area: 1 / 1 / 3 / 2;
+    min-height: 462px;
+    color: $color-default-white;
+    border: none;
+    padding: 0;
+    flex-direction: row;
 
     @media (max-width: $tablet-width) {
-      background-image: url("../img/background/supergames-background-tablet.png");
+      grid-area: 1 / 1 / 2 / -1;
     }
 
     @media (max-width: $mobile-width) {
-      background-image: url("../img/background/supergames-background-mobile.png");
-      width: 100%;
-      min-height: 292px;
+      flex-direction: column;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50%;
+      background: $color-cornflower-blue url("../img/background/promo-background-desktop.jpg") no-repeat center;
+      background-size: cover;
+      flex-shrink: 0;
+
+      @media (max-width: $tablet-width) {
+        width: 58.84%;
+        background-image: url("../img/background/promo-background-tablet.jpg");
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+        min-height: 299px;
+        background-image: url("../img/background/promo-background-mobile.jpg");
+      }
     }
   }
 }
 
-.event__about-container {
-  width: 43.1%;
-  min-height: 500px;
+.promo__list-item-container {
   background-color: $color-torch-red;
-  display: grid;
-  grid-template-columns: repeat(2, min-content);
-  grid-template-rows: repeat(2, min-content) 1fr;
-  padding: 87px 20px;
-  justify-content: center;
-
-  @media (max-width: $tablet-width) {
-    min-height: 292px;
-    padding: 51px 20px;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 100%;
-    grid-template-columns: 56% 22.4%;
-  }
-}
-
-.event__about-container h2 {
-  margin: 0;
-  margin-right: 50px;
-  margin-bottom: 20px;
-  font-family: $font-bebas-neue;
-  font-size: 90px;
-  line-height: 90px;
-
-  @media (max-width: $tablet-width) {
-    margin-right: 25px;
-    margin-bottom: 10px;
-    font-size: 52px;
-    line-height: 52px;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-right: 25px;
-    margin-bottom: 10px;
-  }
-}
-
-.event__list {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.event__list-item {
+  padding: 45px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 
-  &:not(:last-child) {
-    margin-bottom: 6px;
-    margin-right: 20px;
+  @media (max-width: $mobile-width) {
+    min-height: 299px;
   }
 }
 
-.event__list-term {
-  font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 7px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 3px;
-  }
-}
-
-.event__list-detail {
-  display: flex;
+.promo__list-item h3 {
+  font-size: 26px;
+  line-height: 24px;
   margin: 0;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  padding-top: 5px;
-  border-top: 1px solid $color-default-white;
+  margin-bottom: 10px;
+}
 
-  @media (max-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 27px;
-    padding-top: 2px;
+.promo__list-item--unlimited h3 {
+  font-size: 28px;
+  line-height: 44px;
+  margin-bottom: 30px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
   }
 }
 
-.event__list-detail-reduce-text {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  width: 40px;
-  margin-left: 5px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 10px;
-    line-height: 13px;
-    width: 30px;
-  }
+.promo__big-text {
+  font-size: 70px;
+  line-height: 70px;
 }
 
-.event__about-container p {
-  grid-area: 2 / 1 / 3 / -1;
+.promo__list-item p {
   margin: 0;
-  font-size: 18px;
-  line-height: 27px;
-
-  @media (max-width: $tablet-width) {
-    font-size: 12px;
-    line-height: 18px;
-  }
+  line-height: 22px;
 }
 
-.event__button {
-  align-self: end;
-  justify-self: center;
-  grid-area: 3 / 1 / -1 / -1;
+.promo__list-item--unlimited p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.promo__button {
+  margin-top: auto;
+  color: $color-resolution-blue;
+  text-decoration: none;
   font-size: 12px;
   line-height: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $color-default-white;
   font-weight: 700;
-  border: 4px solid $color-default-white;
-  width: 100%;
-  min-height: 67px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-transform: uppercase;
+  padding: 3px 0;
+  align-self: start;
+  border-bottom: 1px solid $color-resolution-blue;
 
-  @media (max-width: $tablet-width) {
-    border-width: 2px;
-    font-size: 10px;
-    line-height: 12px;
-    min-height: 39px;
+  @media (max-width: $mobile-width) {
+    align-self: center;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.promo__list-item--unlimited .promo__button {
+  color: $color-default-white;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom-color: $color-default-white;
 }

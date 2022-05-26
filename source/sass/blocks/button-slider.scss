@@ -1,0 +1,33 @@
+.button-slider::after {
+  content: "";
+  width: 16px;
+  height: 32px;
+  background-image: url("../img/sprite/arrow-slider.svg");
+  background-size: cover;
+
+  @media (max-width: $mobile-width) {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.button-slider--prev {
+  left: -45px;
+
+  @media (max-width: $tablet-width) {
+    left: 0;
+  }
+}
+
+.button-slider--next {
+  right: -45px;
+
+  @media (max-width: $tablet-width) {
+    right: 0;
+  }
+
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+

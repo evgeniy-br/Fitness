@@ -138,37 +138,3 @@
     }
   }
 }
-
-.coaches__button-prev::after,
-.coaches__button-next::after {
-  content: '';
-  width: 16px;
-  height: 32px;
-  background-image: url("../img/sprite/arrow-slider.svg");
-  background-size: cover;
-
-  @media (max-width: $mobile-width) {
-    width: 10px;
-    height: 19px;
-  }
-}
-
-.coaches__button-next::after {
-  transform: rotate(180deg);
-}
-
-.coaches__button-prev {
-  left: -45px;
-
-  @media (max-width: $tablet-width) {
-    left: 0;
-  }
-}
-
-.coaches__button-next {
-  right: -45px;
-
-  @media (max-width: $tablet-width) {
-    right: 0;
-  }
-}
