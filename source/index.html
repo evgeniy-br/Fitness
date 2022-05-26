@@ -382,9 +382,9 @@
         </div>
       </section>
       <section class="connection">
-        <div class="connection__wrapper wrapper">
-          <h2 class="visually-hidden">Связь с нами</h2>
-          <div class="connection__form-wrapper">
+        <h2 class="visually-hidden">Коммуникация с нами</h2>
+        <div class="connection__form-wrapper">
+          <div class="connection__form-container">
             <h3>Бесплатное занятие</h3>
             <form action="https://echo.htmlacademy.ru" method="POST">
               <ul class="connection__form-input-list">
@@ -400,33 +400,31 @@
               <button class="connection__form-button" type="submit">Отправить</button>
             </form>
           </div>
-          <div class="connection__contacts">
+        </div>
+        <div class="connection__contacts">
+          <div class="connection__contacts-container">
             <h3>Контакты</h3>
             <div class="connection__contacts-wrapper">
-              <div class="connection__location">
-                <ul class="connection__location-list">
-                  <li class="connection__location-item">
-                    <h4>Адрес:</h4>
-                    <address class="connection__location-address">г. Омск, ул. 60 лет Октября, 7</address>
-                  </li>
-                  <li class="connection__location-item">
-                    <h4>График работы:</h4>
-                    <p>Пн-Вс: с 8:00 до 22:00</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="connection__remote">
-                <ul class="connection__remote-list">
-                  <li class="connection__remote-item">
-                    <h4>Телефон:</h4>
-                    <a class="connection__remote-phone" href="tel:88005555555">8-800-555-55-55</a>
-                  </li>
-                  <li class="connection__remote-item">
-                    <h4>Email:</h4>
-                    <a class="connection__remote-email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="connection__list connection__list--location">
+                <li class="connection__item">
+                  <h4>Адрес:</h4>
+                  <address class="connection__detail connection__detail--address">г. Омск, ул. 60 лет Октября, 7</address>
+                </li>
+                <li class="connection__item">
+                  <h4>График работы:</h4>
+                  <p class="connection__detail connection__detail--text">Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+              </ul>
+              <ul class="connection__list connection__list--remote">
+                <li class="connection__item">
+                  <h4>Телефон:</h4>
+                  <a class="connection__detail connection__detail--link" href="tel:88005555555">8-800-555-55-55</a>
+                </li>
+                <li class="connection__item">
+                  <h4>Email:</h4>
+                  <a class="connection__detail connection__detail--link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -1,15 +1,36 @@
 .connection {
-  background: $connection-background-gradient;
-}
+  display: flex;
+  flex-wrap: wrap;
 
-.connection__wrapper {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .connection__form-wrapper {
+  background-color: $color-default-black;
   color: $color-default-white;
-  padding: 70px 170px 70px 0;
+  width: 50%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.connection__form-container {
+  margin-left: auto;
+  max-width: 683px;
+  padding: 70px 0;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 90.62%;
+    margin: 0 auto;
+  }
 }
 
 .connection__form-wrapper h3 {
@@ -18,11 +39,33 @@
   font-family: $font-bebas-neue;
   font-size: 49px;
   line-height: 64px;
+  padding: 0 17.56% 0 15.07%;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    padding: 0 17.318%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0;
+  }
 }
 
 .connection__form-wrapper form {
   display: flex;
   flex-direction: column;
+  padding: 0 17.56% 0 15.07%;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 21.224% 0 17.318%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
 }
 
 .connection__form-input-list {
@@ -33,10 +76,22 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .connection__form-input-item {
   width: 46.34%;
+
+  @media (max-width: $tablet-width) {
+    width: 43.64%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .connection__form-input-item input {
@@ -65,4 +120,154 @@
   line-height: 16px;
   min-height: 52px;
   padding: 10px;
+}
+
+.connection__contacts {
+  border-top: 1px solid $color-default-black;
+  width: 50%;
+
+  @media (max-width: $tablet-width) {
+    border: none;
+    width: 100%;
+  }
+}
+
+.connection__contacts-container {
+  max-width: 683px;
+  margin-right: auto;
+  padding: 70px 0;
+
+  @media (max-width: $tablet-width) {
+    max-width: none;
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 90.62%;
+    margin: 0 auto;
+  }
+}
+
+.connection__contacts h3 {
+  margin: 0;
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+  font-family: $font-bebas-neue;
+  margin-bottom: 50px;
+  padding: 0 15.07% 0 17.56%;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    padding: 0 17.318%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0;
+  }
+}
+
+.connection__contacts-wrapper {
+  display: flex;
+  padding: 0 15.07% 0 17.56%;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 23.3% 0 17.318%;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    flex-direction: column;
+  }
+}
+
+.connection__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 60px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 48px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &--remote {
+    padding-left: 60px;
+    padding-right: 0;
+    border-left: 1px solid $color-light-slate-grey;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 48px;
+      padding-right: 0;
+    }
+
+    @media (max-width: $mobile-width) {
+      border: none;
+    }
+  }
+}
+
+.connection__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.connection__item h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  line-height: 24px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.connection__detail {
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &--address {
+    font-style: normal;
+  }
+
+  &--text {
+    margin: 0;
+  }
+
+  &--link {
+    color: $color-default-black;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 }
