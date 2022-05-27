@@ -3,12 +3,26 @@
     url("../img/background/weights-desktop.png") no-repeat right 110%,
     linear-gradient($color-ghost-white 87.64%, $color-default-white 87.64%);
   padding: 120px 0 240px 0;
+  background-size: 287px;
+
+  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
+    background-image:
+      url("../img/background/weights-desktop@2x.png"),
+      linear-gradient($color-ghost-white 87.64%, $color-default-white 87.64%);
+  }
 
   @media (max-width: $tablet-width) {
     padding: 100px 0 200px 0;
-    background:
-      url("../img/background/weights-tablet.png") no-repeat right 100%,
+    background-image:
+      url("../img/background/weights-tablet.png"),
       linear-gradient($color-ghost-white 94.678%, $color-default-white 94.678%);
+      background-size: 347px;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/background/weights-tablet@2x.png"),
+        linear-gradient($color-ghost-white 94.678%, $color-default-white 94.678%);
+    }
   }
 
   @media (max-width: $mobile-width) {

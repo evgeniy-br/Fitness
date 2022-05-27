@@ -1600,6 +1600,7 @@ img {
   background: url("../img/background/weights-desktop.png") no-repeat right 110%, -o-linear-gradient(#f8f9fc 87.64%, #ffffff 87.64%);
   background: url("../img/background/weights-desktop.png") no-repeat right 110%, linear-gradient(#f8f9fc 87.64%, #ffffff 87.64%);
   padding: 120px 0 240px 0;
+  background-size: 287px;
 }
 
 .tickets h2 {
@@ -2645,10 +2646,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .footer__nav-list-item {
@@ -2696,6 +2693,26 @@ img {
 
 .footer__social-list-item:active {
   opacity: 0.5;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1366px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1366px), (min-resolution: 2dppx) and (min-width: 1366px) {
+  .about__video-container {
+    background-image: url("../img/svg/play-button.svg"), url("../img/background/video-preview-desktop@2x.jpg");
+  }
+
+  .tickets {
+    background-image: url("../img/background/weights-desktop@2x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(87.64%, #f8f9fc), color-stop(87.64%, #ffffff));
+    background-image: url("../img/background/weights-desktop@2x.png"), -o-linear-gradient(#f8f9fc 87.64%, #ffffff 87.64%);
+    background-image: url("../img/background/weights-desktop@2x.png"), linear-gradient(#f8f9fc 87.64%, #ffffff 87.64%);
+  }
+
+  .event::after {
+    background-image: url("../img/background/supergames-background-desktop@2x.png");
+  }
+
+  .promo__list-item--unlimited::after {
+    background-image: url("../img/background/promo-background-desktop@2x.jpg");
+  }
 }
 
 @media (max-width: 1199.9px) {
@@ -2829,9 +2846,10 @@ img {
 
   .tickets {
     padding: 100px 0 200px 0;
-    background: url("../img/background/weights-tablet.png") no-repeat right 100%, -webkit-gradient(linear, left top, left bottom, color-stop(94.678%, #f8f9fc), color-stop(94.678%, #ffffff));
-    background: url("../img/background/weights-tablet.png") no-repeat right 100%, -o-linear-gradient(#f8f9fc 94.678%, #ffffff 94.678%);
-    background: url("../img/background/weights-tablet.png") no-repeat right 100%, linear-gradient(#f8f9fc 94.678%, #ffffff 94.678%);
+    background-image: url("../img/background/weights-tablet.png"), -webkit-gradient(linear, left top, left bottom, color-stop(94.678%, #f8f9fc), color-stop(94.678%, #ffffff));
+    background-image: url("../img/background/weights-tablet.png"), -o-linear-gradient(#f8f9fc 94.678%, #ffffff 94.678%);
+    background-image: url("../img/background/weights-tablet.png"), linear-gradient(#f8f9fc 94.678%, #ffffff 94.678%);
+    background-size: 347px;
   }
 
   .tickets h2 {
@@ -3130,6 +3148,26 @@ img {
 
   .footer__nav-list-item {
     margin-right: 30px;
+  }
+}
+
+@media (max-width: 1199.9px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199.9px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1199.9px) and (min-resolution: 2dppx) {
+  .about__video-container {
+    background-image: url("../img/svg/play-button.svg"), url("../img/background/video-preview-tablet@2x.jpg");
+  }
+
+  .tickets {
+    background-image: url("../img/background/weights-tablet@2x.png"), -webkit-gradient(linear, left top, left bottom, color-stop(94.678%, #f8f9fc), color-stop(94.678%, #ffffff));
+    background-image: url("../img/background/weights-tablet@2x.png"), -o-linear-gradient(#f8f9fc 94.678%, #ffffff 94.678%);
+    background-image: url("../img/background/weights-tablet@2x.png"), linear-gradient(#f8f9fc 94.678%, #ffffff 94.678%);
+  }
+
+  .event::after {
+    background-image: url("../img/background/supergames-background-tablet@2x.png");
+  }
+
+  .promo__list-item--unlimited::after {
+    background-image: url("../img/background/promo-background-tablet@2x.jpg");
   }
 }
 
@@ -3575,10 +3613,8 @@ img {
 
   .connection__contacts-wrapper {
     padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .connection__list {
@@ -3587,6 +3623,7 @@ img {
 
   .connection__list:not(:last-child) {
     margin-bottom: 35px;
+    margin-right: 30px;
   }
 
   .connection__list--remote {
@@ -3608,10 +3645,8 @@ img {
 
   .footer__nav {
     position: relative;
-    display: block;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+    min-width: 250px;
+    max-width: none;
   }
 
   .footer__logo {
@@ -3620,8 +3655,58 @@ img {
     left: 0;
   }
 
+  .footer__nav-list {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+
+  .footer__nav-list-item {
+    margin-bottom: 20px;
+    margin-right: 70px;
+  }
+
   .footer__nav-list-item:first-child {
-    padding-top: 43px;
+    padding-top: 40px;
+  }
+
+  .footer__social-list {
+    margin-left: 0;
+    margin-top: 35px;
+  }
+
+  .footer__social-icon--vk {
+    width: 32px;
+    height: 17px;
+  }
+
+  .footer__social-icon--instagram {
+    width: 27px;
+    height: 27px;
+  }
+
+  .footer__social-icon--facebook {
+    width: 14px;
+    height: 27px;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .about__video-container {
+    background-image: url("../img/svg/play-button.svg"), url("../img/background/video-preview-mobile@2x.jpg");
+  }
+
+  .event::after {
+    background-image: url("../img/background/supergames-background-mobile@2x.png");
+  }
+
+  .promo__list-item--unlimited::after {
+    background-image: url("../img/background/promo-background-mobile@2x.jpg");
   }
 }
 

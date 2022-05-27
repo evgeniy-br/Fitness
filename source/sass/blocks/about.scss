@@ -159,6 +159,12 @@
   height: 100%;
   background-size: 100px, cover;
 
+  @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
+    background-image:
+      url("../img/svg/play-button.svg"),
+      url("../img/background/video-preview-desktop@2x.jpg");
+  }
+
   @media (max-width: $tablet-width) {
     padding-top: 62.637%;
     height: auto;
@@ -166,6 +172,12 @@
       url("../img/svg/play-button.svg"),
       url("../img/background/video-preview-tablet.jpg");
     background-size: 29.323%, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+      url("../img/svg/play-button.svg"),
+      url("../img/background/video-preview-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -174,6 +186,12 @@
       url("../img/svg/play-button.svg"),
       url("../img/background/video-preview-mobile.jpg");
     background-size: 22.812%, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/svg/play-button.svg"),
+        url("../img/background/video-preview-mobile@2x.jpg");
+    }
   }
 
   &:hover {
