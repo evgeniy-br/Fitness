@@ -1,8 +1,8 @@
 .tickets {
   background:
-    url("../img/background/weights-desktop.png") no-repeat right 110%,
+    url("../img/background/weights-desktop.png") no-repeat right 106%,
     linear-gradient($color-ghost-white 87.64%, $color-default-white 87.64%);
-  padding: 120px 0 240px 0;
+  padding: 118px 0 240px 0;
   background-size: 287px;
 
   @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
@@ -12,21 +12,22 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 100px 0 200px 0;
+    padding: 99px 0 200px 0;
     background-image:
       url("../img/background/weights-tablet.png"),
-      linear-gradient($color-ghost-white 94.678%, $color-default-white 94.678%);
-      background-size: 347px;
+      linear-gradient($color-ghost-white 94.67%, $color-default-white 94.67%);
+    background-position: right 101.6%;
+    background-size: 347px;
 
     @media (min-resolution: 2dppx) {
       background-image:
         url("../img/background/weights-tablet@2x.png"),
-        linear-gradient($color-ghost-white 94.678%, $color-default-white 94.678%);
+        linear-gradient($color-ghost-white 94.67%, $color-default-white 94.67%);
     }
   }
 
   @media (max-width: $mobile-width) {
-    padding: 70px 0 140px 0;
+    padding: 69px 0 140px 0;
     background: linear-gradient($color-ghost-white 95.5%, $color-default-white 95.5%);
   }
 }
@@ -35,20 +36,22 @@
   margin: 0;
   text-transform: uppercase;
   font-family: $font-bebas-neue;
-  font-size: 40px;
+  font-size: 49px;
   line-height: 49px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 18px;
+  letter-spacing: 1.4px;
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 1.1px;
   }
 }

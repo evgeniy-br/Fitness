@@ -8,20 +8,20 @@ triggers.forEach((trigger) =>
 
     if (activeTab) {
       const id = activeTab.replace('#', '');
-      triggers.forEach((trigger) => {
-        if (trigger.classList.contains('tabs__triggers-item--active')) {
-          trigger.classList.remove('tabs__triggers-item--active');
+      triggers.forEach((item) => {
+        if (item.classList.contains('tabs__triggers-item--active')) {
+          item.classList.remove('tabs__triggers-item--active');
         }
-      })
+      });
 
       contentsItems.forEach((contentItem) => {
         if (contentItem.classList.contains('tabs__content-item--active')) {
           contentItem.classList.remove('tabs__content-item--active');
         }
-      })
+      });
 
       trigger.classList.add('tabs__triggers-item--active');
       document.getElementById(id).classList.add('tabs__content-item--active');
     }
   })
-)
+);

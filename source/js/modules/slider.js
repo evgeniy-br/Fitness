@@ -1,16 +1,17 @@
-const sliderCoaches = new Swiper('.coaches__swiper', {
+new Swiper('.coaches__swiper', {
   navigation: {
     prevEl: '.coaches__button-prev',
     nextEl: '.coaches__button-next',
   },
   slidesPerView: 1,
   spaceBetween: 15,
+  initialSlide: 2,
   loop: true,
-  autoHeight: true,
   breakpoints: {
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
+      initialSlide: 2,
     },
     1200: {
       slidesPerView: 4,
@@ -19,7 +20,7 @@ const sliderCoaches = new Swiper('.coaches__swiper', {
   },
 });
 
-const sliderComments = new Swiper('.comments__swiper', {
+new Swiper('.comments__swiper', {
   navigation: {
     prevEl: '.comments__button-prev',
     nextEl: '.comments__button-next',

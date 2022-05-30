@@ -1,11 +1,11 @@
 .header {
   background: $header-gradient-desktop;
   padding-top: 30px;
-  padding-bottom: 51px;
+  padding-bottom: 46px;
 
   @media (max-width: $tablet-width) {
     padding-top: 40px;
-    padding-bottom: 82px;
+    padding-bottom: 76px;
     background: $header-gradient-tablet;
   }
 
@@ -19,31 +19,49 @@
 .header__logo-phone-container {
   display: flex;
   justify-content: space-between;
+  line-height: 0;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 80px;
+    margin-bottom: 71px;
+  }
+}
+
+.header__logo {
+  @media (max-width: $tablet-width) {
+    width: 80px;
+    height: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 68px;
+    height: 15px;
   }
 }
 
 .header__phone {
   text-decoration: none;
   color: $color-default-white;
-  font-family: $font-bebas-neue;
   font-size: 26px;
-  line-height: 26px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  font-family: $font-bebas-neue;
+  margin-right: 3px;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
+    margin-right: 0;
+    margin-top: -2px;
   }
 
   @media (max-width: $mobile-width) {
     font-size: 20px;
     line-height: 20px;
+    letter-spacing: -0.4px;
   }
 
   &:hover {
@@ -59,6 +77,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  padding-left: 16px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
 
   @media (max-width: $mobile-width) {
     justify-content: center;
@@ -68,12 +91,12 @@
 .header__services-text-container {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 64px;
+  margin-right: 62px;
   max-width: 383px;
 
   @media (max-width: $tablet-width) {
-    margin-right: 30px;
-    max-width: 308px;
+    margin-right: 23px;
+    max-width: 330px;
   }
 
   @media (max-width: $mobile-width) {
@@ -88,41 +111,43 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 312px;
+  padding-top: 304px;
   color: $color-default-white;
   font-size: 14px;
   line-height: 21px;
   text-align: right;
-  margin-right: -50px;
-  margin-left: 19px;
+  margin-left: 4px;
 
   @media (max-width: $tablet-width) {
     font-size: 14px;
     line-height: 21px;
-    padding-top: 210px;
-    margin-right: -103px;
+    padding-top: 186px;
+    margin-right: -50px;
     margin-left: 0;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0;
     padding-top: 124px;
-    margin-right: -135px;
+    margin-right: -86px;
   }
 }
 
 .header__text-container {
   display: flex;
   flex-direction: column;
-  padding-top: 121px;
-  margin-bottom: 30px;
+  padding-top: 111px;
+  margin-bottom: 56px;
+  margin-left: -35px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 56px;
+    padding-top: 50px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 0;
+    margin-bottom: 41px;
   }
 }
 
@@ -132,19 +157,22 @@
   text-align: right;
   color: $color-default-white;
   text-transform: uppercase;
-  font-size: 109px;
+  font-size: 111px;
   line-height: 109px;
   font-weight: 700;
   width: 298px;
+  letter-spacing: 2.5px;
 
   @media (max-width: $tablet-width) {
-    font-size: 86px;
+    font-size: 87px;
     line-height: 86px;
+    letter-spacing: 2.7px;
   }
 
   @media (max-width: $mobile-width) {
-    font-size: 78px;
+    font-size: 82px;
     line-height: 78px;
+    letter-spacing: 0.8px;
   }
 }
 
@@ -153,16 +181,20 @@
   font-size: 49px;
   line-height: 59px;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+  letter-spacing: 0.9px;
+  margin-right: 1px;
 
   @media (max-width: $tablet-width) {
     font-size: 34px;
     line-height: 41px;
+    margin-bottom: 2px;
   }
 
   @media (max-width: $mobile-width) {
-    font-size: 28px;
+    font-size: 27px;
     line-height: 34px;
+    margin-bottom: 10px;
   }
 }
 
@@ -173,18 +205,28 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  padding: 20px 56px;
+  padding: 10px;
   border: 4px solid $color-default-white;
   align-self: flex-start;
   margin-left: auto;
+  min-width: 236px;
+  min-height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.6px;
 
   @media (max-width: $tablet-width) {
-    padding: 20px 33px;
+    padding: 20px;
+    min-width: 186px;
+    min-height: 60px;
+    margin-right: 4px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     text-align: center;
+    margin-right: 0;
   }
 
   &:hover {
@@ -202,7 +244,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 47.78%;
+    width: 49%;
   }
 
   @media (max-width: $mobile-width) {
@@ -213,18 +255,17 @@
 .header__list-social {
   display: flex;
   flex-direction: column;
-  column-gap: 7px;
   flex-wrap: wrap;
   max-height: 500px;
   font-size: 12px;
   line-height: 14px;
   align-self: flex-end;
-  margin-left: auto;
   margin: 0;
   padding: 0;
   list-style: none;
   margin-left: auto;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
+  justify-content: center;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -232,6 +273,10 @@
 }
 
 .header__list-social-item {
+  &--instagram {
+    align-self: flex-end;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -242,7 +287,7 @@
 }
 
 .header__list-social-item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 19px;
 }
 
 .header__list-social-link {

@@ -12,22 +12,29 @@
 }
 
 .button-slider--prev {
-  left: -45px;
+  left: -62px;
 
   @media (max-width: $tablet-width) {
-    left: 0;
+    left: -7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -9px;
   }
 }
 
 .button-slider--next {
-  right: -45px;
+  right: -62px;
 
   @media (max-width: $tablet-width) {
-    right: 0;
+    right: -7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: -9px;
   }
 
   &::after {
     transform: rotate(180deg);
   }
 }
-
