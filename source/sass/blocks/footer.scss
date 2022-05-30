@@ -80,6 +80,7 @@
 
 .footer__nav-list-item {
   margin-right: 40.3px;
+  user-select: none;
 
   @media (max-width: $tablet-width) {
     margin-right: 30px;

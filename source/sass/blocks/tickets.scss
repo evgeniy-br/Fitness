@@ -1,9 +1,9 @@
 .tickets {
   background:
-    url("../img/background/weights-desktop.png") no-repeat right 106%,
+    url("../img/background/weights-desktop.png") no-repeat calc(50% + 631px) 106%,
     linear-gradient($color-ghost-white 87.64%, $color-default-white 87.64%);
   padding: 118px 0 240px 0;
-  background-size: 287px;
+  background-size: 466px;
 
   @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
     background-image:

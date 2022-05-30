@@ -11,9 +11,9 @@ new Swiper('.coaches__swiper', {
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
-      initialSlide: 2,
     },
     1200: {
+      initialSlide: 0,
       slidesPerView: 4,
       spaceBetween: 40,
     },

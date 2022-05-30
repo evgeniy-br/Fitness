@@ -1,9 +1,9 @@
 .event {
   display: flex;
   color: $color-default-white;
-  margin-bottom: 120px;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 120px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 98px;
@@ -222,6 +222,7 @@
   align-items: center;
   min-width: 347px;
   letter-spacing: 0.6px;
+  user-select: none;
 
   @media (max-width: $tablet-width) {
     border-width: 2px;

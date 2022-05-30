@@ -68,8 +68,9 @@
     min-height: 335px;
   }
 
-  @media (min-width: $mobile-resize) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-resize) and (max-width: $mobile-width) {
     padding-bottom: 35px;
+    min-height: 0;
   }
 }
 
@@ -117,7 +118,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    left: -32px;
+    left: -42px;
   }
 }
 
@@ -127,6 +128,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    right: -32px;
+    right: -42px;
   }
 }

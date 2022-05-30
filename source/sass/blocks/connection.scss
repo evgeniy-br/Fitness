@@ -132,6 +132,16 @@
   min-height: 55px;
   padding: 10px;
   letter-spacing: 0.05em;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .connection__contacts {
@@ -289,15 +299,12 @@
 
   &--address {
     line-height: 21px;
+    font-style: normal;
   }
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
     line-height: 27px;
-  }
-
-  &--address {
-    font-style: normal;
   }
 
   &--text {

@@ -109,6 +109,10 @@
     }
   }
 
+  @media (max-width: $mobile-width) {
+    width: 95%;
+  }
+
   &:not(:last-child) {
     margin-bottom: 8px;
   }

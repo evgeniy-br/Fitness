@@ -173,6 +173,7 @@
   align-self: start;
   border-bottom: 1px solid $color-resolution-blue;
   letter-spacing: 0.05em;
+  user-select: none;
 
   @media (max-width: $mobile-width) {
     align-self: center;
