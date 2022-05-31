@@ -1649,15 +1649,10 @@ img {
 
 .about__video-container {
   position: relative;
-  background: url("../img/svg/play-button.svg") no-repeat center, url("../img/background/video-preview-desktop.jpg") no-repeat;
+  background: url("../img/background/video-preview-desktop.jpg") no-repeat;
   background-color: #495a7d;
-  cursor: pointer;
   padding-top: 62.63%;
-  background-size: 100px, cover;
-}
-
-.about__video-container:hover {
-  background-size: 110px, cover;
+  background-size: cover;
 }
 
 .about__video-container iframe {
@@ -1666,6 +1661,12 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.about__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .tickets {
@@ -2862,7 +2863,7 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1366px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1366px), (min-resolution: 2dppx) and (min-width: 1366px) {
   .about__video-container {
-    background-image: url("../img/svg/play-button.svg"), url("../img/background/video-preview-desktop@2x.jpg");
+    background-image: url("../img/background/video-preview-desktop@2x.jpg");
   }
 
   .tickets {
@@ -3024,12 +3025,7 @@ img {
 
   .about__video-container {
     padding-top: 62.8%;
-    background-image: url("../img/svg/play-button.svg"), url("../img/background/video-preview-tablet.jpg");
-    background-size: 27.5%, cover;
-  }
-
-  .about__video-container:hover {
-    background-size: 31%, cover;
+    background-image: url("../img/background/video-preview-tablet.jpg");
   }
 
   .tickets {
@@ -3472,7 +3468,7 @@ img {
 
 @media (max-width: 1199.9px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199.9px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1199.9px) and (min-resolution: 2dppx) {
   .about__video-container {
-    background-image: url("../img/svg/play-button.svg"), url("../img/background/video-preview-tablet@2x.jpg");
+    background-image: url("../img/background/video-preview-tablet@2x.jpg");
   }
 
   .tickets {
@@ -3629,12 +3625,7 @@ img {
 
   .about__video-container {
     padding-top: 52.18%;
-    background-image: url("../img/svg/play-button.svg"), url("../img/background/video-preview-mobile.jpg");
-    background-size: 22.81%, cover;
-  }
-
-  .about__video-container:hover {
-    background-size: auto, cover;
+    background-image: url("../img/background/video-preview-mobile.jpg");
   }
 
   .tickets {
@@ -4162,7 +4153,7 @@ img {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .about__video-container {
-    background-image: url("../img/svg/play-button.svg"), url("../img/background/video-preview-mobile@2x.jpg");
+    background-image: url("../img/background/video-preview-mobile@2x.jpg");
   }
 
   .event::after {

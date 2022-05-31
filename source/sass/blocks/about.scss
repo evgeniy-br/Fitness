@@ -164,57 +164,30 @@
 
 .about__video-container {
   position: relative;
-  background:
-    url("../img/svg/play-button.svg") no-repeat center,
-    url("../img/background/video-preview-desktop.jpg") no-repeat;
+  background: url("../img/background/video-preview-desktop.jpg") no-repeat;
   background-color: $color-chambray;
-  cursor: pointer;
   padding-top: 62.63%;
-  background-size: 100px, cover;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
-    background-image:
-      url("../img/svg/play-button.svg"),
-      url("../img/background/video-preview-desktop@2x.jpg");
+    background-image: url("../img/background/video-preview-desktop@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
     padding-top: 62.8%;
-    background-image:
-      url("../img/svg/play-button.svg"),
-      url("../img/background/video-preview-tablet.jpg");
-    background-size: 27.5%, cover;
+    background-image: url("../img/background/video-preview-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image:
-        url("../img/svg/play-button.svg"),
-        url("../img/background/video-preview-tablet@2x.jpg");
+      background-image: url("../img/background/video-preview-tablet@2x.jpg");
     }
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 52.18%;
-    background-image:
-      url("../img/svg/play-button.svg"),
-      url("../img/background/video-preview-mobile.jpg");
-    background-size: 22.81%, cover;
+    background-image: url("../img/background/video-preview-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image:
-        url("../img/svg/play-button.svg"),
-        url("../img/background/video-preview-mobile@2x.jpg");
-    }
-  }
-
-  &:hover {
-    background-size: 110px, cover;
-
-    @media (max-width: $tablet-width) {
-      background-size: 31%, cover;
-    }
-
-    @media (max-width: $mobile-width) {
-      background-size: auto, cover;
+      background-image: url("../img/background/video-preview-mobile@2x.jpg");
     }
   }
 }
@@ -225,4 +198,10 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.about__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
