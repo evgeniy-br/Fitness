@@ -1811,53 +1811,6 @@ img {
   border-image: linear-gradient(127deg, #d10a42 17.6%, #00359f 95.31%) 1;
 }
 
-.tabs__content-list-item::before {
-  content: "5000";
-  position: absolute;
-  font-size: 100px;
-  line-height: 0;
-  color: #e8e8e8;
-  top: 205px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  opacity: 0.48;
-  font-weight: 700;
-}
-
-.tabs__content-list-item--day-month::before {
-  content: "1700";
-}
-
-.tabs__content-list-item--full-month::before {
-  content: "2700";
-}
-
-.tabs__content-list-item--coach-half-year::before {
-  content: "28000";
-}
-
-.tabs__content-list-item--day-half-year::before {
-  content: "9000";
-}
-
-.tabs__content-list-item--full-half-year::before {
-  content: "15000";
-}
-
-.tabs__content-list-item--coach-year::before {
-  content: "50000";
-}
-
-.tabs__content-list-item--day-year::before {
-  content: "17000";
-}
-
-.tabs__content-list-item--full-year::before {
-  content: "28000";
-}
-
 .tabs__content-list-item h3 {
   font-size: 26px;
   line-height: 40px;
@@ -1881,6 +1834,54 @@ img {
   margin-bottom: 35px;
   margin-left: 2px;
   z-index: 1;
+}
+
+.tabs__content-price::before {
+  content: attr(data-price);
+  position: absolute;
+  font-size: 100px;
+  line-height: 0;
+  color: #e8e8e8;
+  top: 205px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  opacity: 0.48;
+  font-weight: 700;
+  z-index: -1;
+}
+
+.tabs__content-price--day-month::before {
+  content: attr(data-price);
+}
+
+.tabs__content-price--full-month::before {
+  content: attr(data-price);
+}
+
+.tabs__content-price--coach-half-year::before {
+  content: attr(data-price);
+}
+
+.tabs__content-price--day-half-year::before {
+  content: attr(data-price);
+}
+
+.tabs__content-price--full-half-year::before {
+  content: attr(data-price);
+}
+
+.tabs__content-price--coach-year::before {
+  content: attr(data-price);
+}
+
+.tabs__content-price--day-year::before {
+  content: attr(data-price);
+}
+
+.tabs__content-price--full-year::before {
+  content: attr(data-price);
 }
 
 .tabs__content-price-rouble {
@@ -3070,10 +3071,6 @@ img {
     padding: 56px 20px 60px;
   }
 
-  .tabs__content-list-item::before {
-    top: 204px;
-  }
-
   .tabs__content-list-item h3 {
     line-height: 29px;
     margin-bottom: 10px;
@@ -3085,6 +3082,10 @@ img {
 
   .tabs__content-price {
     margin-bottom: 34px;
+  }
+
+  .tabs__content-price::before {
+    top: 204px;
   }
 
   .tabs__content-button {
@@ -3703,11 +3704,6 @@ img {
     padding: 45px 15px;
   }
 
-  .tabs__content-list-item::before {
-    font-size: 80px;
-    top: 172px;
-  }
-
   .tabs__content-list-item h3 {
     font-size: 22px;
     line-height: 24px;
@@ -3722,6 +3718,11 @@ img {
     line-height: 72px;
     margin-left: 6px;
     margin-bottom: 30px;
+  }
+
+  .tabs__content-price::before {
+    font-size: 80px;
+    top: 172px;
   }
 
   .tabs__content-price-rouble {

@@ -165,60 +165,6 @@
   &:hover {
     border-image: $border-hover-gradient 1;
   }
-
-  &::before {
-    content: "5000";
-    position: absolute;
-    font-size: 100px;
-    line-height: 0;
-    color: $color-whisper;
-    top: 205px;
-    left: 50%;
-    transform: translate(-50%);
-    opacity: 0.48;
-    font-weight: 700;
-
-    @media (max-width: $tablet-width) {
-      top: 204px;
-    }
-
-    @media (max-width: $mobile-width) {
-      font-size: 80px;
-      top: 172px;
-    }
-  }
-
-  &--day-month::before {
-    content: "1700";
-  }
-
-  &--full-month::before {
-    content: "2700";
-  }
-
-  &--coach-half-year::before {
-    content: "28000";
-  }
-
-  &--day-half-year::before {
-    content: "9000";
-  }
-
-  &--full-half-year::before {
-    content: "15000";
-  }
-
-  &--coach-year::before {
-    content: "50000";
-  }
-
-  &--day-year::before {
-    content: "17000";
-  }
-
-  &--full-year::before {
-    content: "28000";
-  }
 }
 
 .tabs__content-list-item h3 {
@@ -272,6 +218,61 @@
     line-height: 72px;
     margin-left: 6px;
     margin-bottom: 30px;
+  }
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    font-size: 100px;
+    line-height: 0;
+    color: $color-whisper;
+    top: 205px;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0.48;
+    font-weight: 700;
+    z-index: -1;
+
+    @media (max-width: $tablet-width) {
+      top: 204px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 80px;
+      top: 172px;
+    }
+  }
+
+  &--day-month::before {
+    content: attr(data-price);
+  }
+
+  &--full-month::before {
+    content: attr(data-price);
+  }
+
+  &--coach-half-year::before {
+    content: attr(data-price);
+  }
+
+  &--day-half-year::before {
+    content: attr(data-price);
+  }
+
+  &--full-half-year::before {
+    content: attr(data-price);
+  }
+
+  &--coach-year::before {
+    content: attr(data-price);
+  }
+
+  &--day-year::before {
+    content: attr(data-price);
+  }
+
+  &--full-year::before {
+    content: attr(data-price);
   }
 }
 
