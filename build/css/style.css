@@ -1852,38 +1852,6 @@ img {
   z-index: -1;
 }
 
-.tabs__content-price--day-month::before {
-  content: attr(data-price);
-}
-
-.tabs__content-price--full-month::before {
-  content: attr(data-price);
-}
-
-.tabs__content-price--coach-half-year::before {
-  content: attr(data-price);
-}
-
-.tabs__content-price--day-half-year::before {
-  content: attr(data-price);
-}
-
-.tabs__content-price--full-half-year::before {
-  content: attr(data-price);
-}
-
-.tabs__content-price--coach-year::before {
-  content: attr(data-price);
-}
-
-.tabs__content-price--day-year::before {
-  content: attr(data-price);
-}
-
-.tabs__content-price--full-year::before {
-  content: attr(data-price);
-}
-
 .tabs__content-price-rouble {
   color: #102654;
   font-weight: 400;

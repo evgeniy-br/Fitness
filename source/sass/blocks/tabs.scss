@@ -242,38 +242,6 @@
       top: 172px;
     }
   }
-
-  &--day-month::before {
-    content: attr(data-price);
-  }
-
-  &--full-month::before {
-    content: attr(data-price);
-  }
-
-  &--coach-half-year::before {
-    content: attr(data-price);
-  }
-
-  &--day-half-year::before {
-    content: attr(data-price);
-  }
-
-  &--full-half-year::before {
-    content: attr(data-price);
-  }
-
-  &--coach-year::before {
-    content: attr(data-price);
-  }
-
-  &--day-year::before {
-    content: attr(data-price);
-  }
-
-  &--full-year::before {
-    content: attr(data-price);
-  }
 }
 
 .tabs__content-price-rouble {
