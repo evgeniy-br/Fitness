@@ -121,13 +121,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 50%;
+  max-width: 122px;
   margin-left: auto;
   margin-top: -1px;
 
   @media (max-width: $mobile-width) {
     margin-left: 0;
     margin-top: 26px;
+    max-width: 170px;
   }
 }
 
@@ -140,7 +141,7 @@
     }
   }
 
-  &:not(:last-child) {
+  &:not(:nth-child(3n)) {
     margin-right: 25px;
 
     @media (max-width: $tablet-width) {

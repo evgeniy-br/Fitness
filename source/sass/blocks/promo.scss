@@ -10,6 +10,11 @@
   }
 }
 
+.promo__advantages-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .promo h2 {
   text-align: center;
   margin: 0;
@@ -33,17 +38,131 @@
   }
 }
 
+.promo__unlimited {
+  width: 48.27%;
+  min-height: 462px;
+  color: $color-default-white;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+  align-self: flex-start;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50%;
+    background: $color-cornflower-blue url("../img/background/promo-background-desktop.jpg") no-repeat center;
+    background-size: cover;
+    flex-shrink: 0;
+
+    @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
+      background-image: url("../img/background/promo-background-desktop@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 58.84%;
+      background-image: url("../img/background/promo-background-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/promo-background-tablet@2x.jpg");
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      min-height: 299px;
+      background-image: url("../img/background/promo-background-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background/promo-background-mobile@2x.jpg");
+      }
+    }
+  }
+}
+
+.promo__unlimited-container {
+  background-color: $color-torch-red;
+  padding: 33px 45px 45px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    min-height: 299px;
+    text-align: center;
+  }
+}
+
+.promo__unlimited h3 {
+  font-size: 28px;
+  line-height: 44px;
+  margin-bottom: 18px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 13px;
+  }
+}
+
+.promo__big-text {
+  font-size: 70px;
+  line-height: 59px;
+}
+
+.promo__unlimited p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.promo__unlimited-button {
+  color: $color-default-white;
+  font-size: 14px;
+  border-bottom: 1px solid $color-default-white;
+  margin-top: auto;
+  text-decoration: none;
+  line-height: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 0;
+  align-self: start;
+  letter-spacing: 0.05em;
+  user-select: none;
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .promo__list {
+  width: 48.27%;
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
 
   @media (max-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+    width: 100%;
     gap: 30px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (max-width: $mobile-width) {
@@ -66,67 +185,6 @@
     padding-top: 37px;
     padding-bottom: 39px;
   }
-
-  &--unlimited {
-    grid-area: 1 / 1 / 3 / 2;
-    min-height: 462px;
-    color: $color-default-white;
-    border: none;
-    padding: 0;
-    flex-direction: row;
-
-    @media (max-width: $tablet-width) {
-      grid-area: 1 / 1 / 2 / -1;
-    }
-
-    @media (max-width: $mobile-width) {
-      flex-direction: column;
-      padding: 0;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      width: 50%;
-      background: $color-cornflower-blue url("../img/background/promo-background-desktop.jpg") no-repeat center;
-      background-size: cover;
-      flex-shrink: 0;
-
-      @media (min-resolution: 2dppx) and (min-width: $desktop-only) {
-        background-image: url("../img/background/promo-background-desktop@2x.jpg");
-      }
-
-      @media (max-width: $tablet-width) {
-        width: 58.84%;
-        background-image: url("../img/background/promo-background-tablet.jpg");
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../img/background/promo-background-tablet@2x.jpg");
-        }
-      }
-
-      @media (max-width: $mobile-width) {
-        width: 100%;
-        min-height: 299px;
-        background-image: url("../img/background/promo-background-mobile.jpg");
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../img/background/promo-background-mobile@2x.jpg");
-        }
-      }
-    }
-  }
-}
-
-.promo__list-item-container {
-  background-color: $color-torch-red;
-  padding: 33px 45px 45px;
-  display: flex;
-  flex-direction: column;
-
-  @media (max-width: $mobile-width) {
-    min-height: 299px;
-  }
 }
 
 .promo__list-item h3 {
@@ -136,29 +194,9 @@
   margin-bottom: 11px;
 }
 
-.promo__list-item--unlimited h3 {
-  font-size: 28px;
-  line-height: 44px;
-  margin-bottom: 18px;
-
-  @media (max-width: $mobile-width) {
-    margin-bottom: 13px;
-  }
-}
-
-.promo__big-text {
-  font-size: 70px;
-  line-height: 59px;
-}
-
 .promo__list-item p {
   margin: 0;
   line-height: 22px;
-}
-
-.promo__list-item--unlimited p {
-  font-size: 18px;
-  line-height: 25px;
 }
 
 .promo__button {
@@ -186,10 +224,4 @@
   &:active {
     opacity: 0.5;
   }
-}
-
-.promo__list-item--unlimited .promo__button {
-  color: $color-default-white;
-  font-size: 14px;
-  border-bottom-color: $color-default-white;
 }

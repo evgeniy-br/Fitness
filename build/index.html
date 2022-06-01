@@ -186,7 +186,7 @@
         <div class="coaches__wrapper wrapper">
           <div class="coaches__swiper swiper">
             <div class="swiper-wrapper">
-              <div class="coaches__slide swiper-slide">
+              <div class="coaches__slide swiper-slide" tabindex="0">
                 <h3>Анна Павлова</h3>
                 <picture>
                   <source srcset="img/content/coaches-fotos/pavlova-desktop.webp 1x, img/content/coaches-fotos/pavlova-desktop@2x.webp 2x" type="image/webp">
@@ -203,7 +203,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="coaches__slide swiper-slide">
+              <div class="coaches__slide swiper-slide" tabindex="0">
                 <h3>Алексей Лавров</h3>
                 <picture>
                   <source srcset="img/content/coaches-fotos/lavrov-desktop.webp 1x, img/content/coaches-fotos/lavrov-desktop@2x.webp 2x" type="image/webp">
@@ -220,7 +220,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="coaches__slide swiper-slide">
+              <div class="coaches__slide swiper-slide" tabindex="0">
                 <h3>Александр Пашков</h3>
                 <picture>
                   <source media="(max-width: 767px)" srcset="img/content/coaches-fotos/pashkov-mobile.webp 1x, img/content/coaches-fotos/pashkov-mobile@2x.webp 2x" type="image/webp">
@@ -239,7 +239,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="coaches__slide swiper-slide">
+              <div class="coaches__slide swiper-slide" tabindex="0">
                 <h3>Мария Кетова</h3>
                 <picture>
                   <source media="(max-width: 1199px)" srcset="img/content/coaches-fotos/ketova-tablet.webp 1x, img/content/coaches-fotos/ketova-tablet@2x.webp 2x" type="image/webp">
@@ -257,7 +257,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="coaches__slide swiper-slide">
+              <div class="coaches__slide swiper-slide" tabindex="0">
                 <h3>Анна Павлова</h3>
                 <picture>
                   <source srcset="img/content/coaches-fotos/pavlova-desktop.webp 1x, img/content/coaches-fotos/pavlova-desktop@2x.webp 2x" type="image/webp">
@@ -274,7 +274,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="coaches__slide swiper-slide">
+              <div class="coaches__slide swiper-slide" tabindex="0">
                 <h3>Алексей Лавров</h3>
                 <picture>
                   <source srcset="img/content/coaches-fotos/lavrov-desktop.webp 1x, img/content/coaches-fotos/lavrov-desktop@2x.webp 2x" type="image/webp">
@@ -291,7 +291,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="coaches__slide swiper-slide">
+              <div class="coaches__slide swiper-slide" tabindex="0">
                 <h3>Александр Пашков</h3>
                 <picture>
                   <source media="(max-width: 767px)" srcset="img/content/coaches-fotos/pashkov-mobile.webp 1x, img/content/coaches-fotos/pashkov-mobile@2x.webp 2x" type="image/webp">
@@ -310,7 +310,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="coaches__slide swiper-slide">
+              <div class="coaches__slide swiper-slide" tabindex="0">
                 <h3>Мария Кетова</h3>
                 <picture>
                   <source media="(max-width: 1199px)" srcset="img/content/coaches-fotos/ketova-tablet.webp 1x, img/content/coaches-fotos/ketova-tablet@2x.webp 2x" type="image/webp">
@@ -371,40 +371,27 @@
       </section>
       <section class="promo wrapper" id="promo">
         <h2>Акции</h2>
-        <ul class="promo__list">
-          <li class="promo__list-item promo__list-item--unlimited">
-            <div class="promo__list-item-container">
+        <div class="promo__advantages-container">
+          <div class="promo__unlimited">
+            <div class="promo__unlimited-container">
               <h3>Год<br><span class="promo__big-text">4999</span></h3>
               <p>Безлимитный абонемент в тренажерный зал</p>
-              <a class="promo__button" href="#">Подробнее</a>
+              <a class="promo__unlimited-button" href="#">Подробнее</a>
             </div>
-          </li>
-          <li class="promo__list-item">
-            <h3>Месяц бесплатно</h3>
-            <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
-            <a class="promo__button" href="#">Подробнее</a>
-          </li>
-          <li class="promo__list-item">
-            <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с&nbsp;командой</p>
-            <a class="promo__button" href="#">Подробнее</a>
-          </li>
-          <li class="promo__list-item">
-            <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с&nbsp;командой</p>
-            <a class="promo__button" href="#">Подробнее</a>
-          </li>
-          <li class="promo__list-item">
-            <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с&nbsp;командой</p>
-            <a class="promo__button" href="#">Подробнее</a>
-          </li>
-          <li class="promo__list-item">
-            <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с&nbsp;командой</p>
-            <a class="promo__button" href="#">Подробнее</a>
-          </li>
-        </ul>
+          </div>
+          <ul class="promo__list">
+            <li class="promo__list-item">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
+              <a class="promo__button" href="#">Подробнее</a>
+            </li>
+            <li class="promo__list-item">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с&nbsp;командой</p>
+              <a class="promo__button" href="#">Подробнее</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="comments">
         <h2>Отзывы</h2>
