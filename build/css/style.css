@@ -2381,6 +2381,7 @@ img {
 }
 
 .promo__unlimited h3 {
+  margin: 0;
   font-size: 28px;
   line-height: 44px;
   margin-bottom: 18px;
@@ -2392,6 +2393,7 @@ img {
 }
 
 .promo__unlimited p {
+  margin: 0;
   font-size: 18px;
   line-height: 25px;
 }
@@ -2438,7 +2440,8 @@ img {
 
 .promo__list-item {
   color: #1c3374;
-  border: 7px solid transparent;
+  border-style: solid;
+  border-width: 7px;
   -o-border-image: -o-linear-gradient(280deg, #d10a42 17.6%, #00359f 95.31%) 1;
   border-image: linear-gradient(170deg, #d10a42 17.6%, #00359f 95.31%) 1;
   padding: 28px;

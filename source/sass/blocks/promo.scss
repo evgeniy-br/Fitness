@@ -104,9 +104,11 @@
 }
 
 .promo__unlimited h3 {
+  margin: 0;
   font-size: 28px;
   line-height: 44px;
   margin-bottom: 18px;
+
 
   @media (max-width: $mobile-width) {
     margin-bottom: 13px;
@@ -119,6 +121,7 @@
 }
 
 .promo__unlimited p {
+  margin: 0;
   font-size: 18px;
   line-height: 25px;
 }
@@ -172,7 +175,8 @@
 
 .promo__list-item {
   color: $color-resolution-blue;
-  border: 7px solid transparent;
+  border-style: solid;
+  border-width: 7px;
   border-image: $border-gradient 1;
   padding: 28px;
   padding-top: 25px;

@@ -1,3 +1,16 @@
+const eventButton = document.querySelector('.event__button');
+const coachesSlide = document.querySelector('.coaches__slide');
+const inputForward = document.querySelector('#coaches__slide-forward');
+const inputBack = document.querySelector('#coaches__slide-back');
+
+inputForward.addEventListener('focus', () => {
+  coachesSlide.focus();
+})
+
+inputBack.addEventListener('focus', () => {
+  eventButton.focus();
+})
+
 new Swiper('.coaches__swiper', {
   navigation: {
     prevEl: '.coaches__button-prev',
