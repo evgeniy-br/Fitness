@@ -202,6 +202,28 @@
 
 .about__video-button {
   position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url('../img/svg/play-button.svg') no-repeat center;
+  background-size: cover;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    width: 73px;
+    height: 73px;
+  }
+
+  &:hover {
+    width: 107px;
+    height: 107px;
+
+    @media (max-width: $tablet-width) {
+      width: 65px;
+      height: 65px;
+    }
+  }
 }

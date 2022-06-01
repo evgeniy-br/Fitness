@@ -1665,8 +1665,22 @@ img {
 
 .about__video-button {
   position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("../img/svg/play-button.svg") no-repeat center;
+  background-size: cover;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+}
+
+.about__video-button:hover {
+  width: 107px;
+  height: 107px;
 }
 
 .tickets {
@@ -3026,6 +3040,16 @@ img {
   .about__video-container {
     padding-top: 62.8%;
     background-image: url("../img/background/video-preview-tablet.jpg");
+  }
+
+  .about__video-button {
+    width: 73px;
+    height: 73px;
+  }
+
+  .about__video-button:hover {
+    width: 65px;
+    height: 65px;
   }
 
   .tickets {
